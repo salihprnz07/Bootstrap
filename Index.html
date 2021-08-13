@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5/css/bootstrap.min.css" />  <!--butonların görseli için-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">  <!--iconlar için-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="description" content="SAĞDIÇLAR İDEAL GIDA SANAYİ VE DIŞ TİCARET A.Ş">
+    <meta name="author" content="SAĞDIÇLAR İDEAL GIDA SANAYİ VE DIŞ TİCARET A.Ş">
+    <link rel="shortcut icon" href="./Untitled-2-1608560817.png" /> <!--logo-->
+    <link rel="stylesheet" type="text/css" href="../SatisEkrani/css/default.css" />  <!--butonların görseli için-->
+    <title>Hızlı Satış Ekranı | BS4</title>
+
+    <!-- **fieldset yanyana 3 alan için  **divim ekranı 3 e bölmek için  **yuvarlak tanımlı ürünler stil ile buton oluşturdum button class="yuvarlak" diyip kullandım  **center yuvarlak butonları hizalamak için kullandım. --alttaki 4 tane stil ise hesap makinesi kısmı için-->
+    <style>
+        fieldset {
+          background-color: #eeeeee;
+          height:780px;
+          width: 427px;
+          border: rgb(0, 0, 0) 2px solid;
+        }
+        
+        legend {
+          background-color: gray;
+          color: white;
+          padding: 5px 10px;
+        }
+        
+        input {
+          margin: 5px;
+        }
+
+  .divim {
+  
+    display: inline-block;
+    
+    margin: 25px;
+}
+.yuvarlak
+{
+border:1px solid blue;
+background-color:dodgerblue;
+width:60px;
+height:60px;
+ border-radius: 40px;
+-moz-border-radius: 40px;
+-webkit-border-radius: 40px;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+  .pb-calc-container {
+        font-family: Lato;
+    }
+
+  .pb-calc-btn {
+      border: none;
+      background: none;
+      font-size: 20px;
+  }
+
+      .pb-calc-btn:hover {
+          background: blue;
+          color: white;
+      }
+
+  .pb-calc-panel-body {
+      padding-bottom: 0;
+      text-align: center;
+  }
+
+</style>
+
+</head>
+    <body>
+        <form action="/******">   
+          <div class="divim" float:right;>
+            <fieldset>
+              &nbsp; <legend>Sepet Bilgileri:</legend>
+              <div class="form-group w-75">
+                <input type="text" class="form-control" placeholder="Okutulan Barkod" > 
+              </div>         
+             &nbsp; <label for="furunler">Sepetteki Ürünler:</label>
+             &nbsp; &nbsp;<textarea id="text" rows="15" cols="55" style="background-color:black; resize: none; border: 2px solid blue; color: #ffffff;"></textarea> </br>
+              &nbsp;<i class="bi bi-calculator-fill"></i>
+             &nbsp; <label for="faratoplam" class="text-primary"> Ara Toplam:</label>  <br> 
+             <div class="form-group w-75">
+             <input type="text" class="form-control" >
+          </div>
+        </br>
+            <div class="container text-center">
+              <button type="button" class="btn btn-primary "> <i class="bi-cash" style="font-size: 2rem;"></i> Nakit</button> 
+              &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+               <button type="button" class="btn btn-primary"> <i class="bi bi-wallet-fill" style="font-size: 2rem;"></i> Kredi</button>
+            </div>
+             <br>
+             <div class="container text-center">
+               <button type="button" class="btn btn-primary"> <i class="bi bi-calendar2" style="font-size: 2rem;"></i> Açık</button> 
+              &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+               <button type="button" class="btn btn-primary"> <i class="bi bi-caret-right-square-fill" style="font-size: 2rem;"></i> Diğer</button>
+            </div>
+            </fieldset>
+          </div>
+    
+          <div class="divim" float:right;>
+            <fieldset>
+              &nbsp; <legend>Tanımlı Ürünler:</legend>
+              <div class="row" >
+              <div class="center" >
+                &nbsp; &nbsp;<button type="button" class="yuvarlak"> Ekmek</button> 
+                <button type="button" class="yuvarlak"> Poşet</button> 
+                <button type="button" class="yuvarlak"> Su</button> 
+                <button type="button" class="yuvarlak"> Su</button>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="center" >
+                &nbsp; &nbsp;<button type="button" class="yuvarlak"> Ekmek</button> 
+                <button type="button" class="yuvarlak"> Poşet</button>
+                <button type="button" class="yuvarlak"> Su</button>
+                <button type="button" class="yuvarlak"> Su</button> 
+              </div>
+            </div>
+            <div class="row" >
+              <div class="center" >
+                &nbsp; &nbsp;<button type="button" class="yuvarlak"> Ekmek</button> 
+                <button type="button" class="yuvarlak"> Poşet</button> 
+                <button type="button" class="yuvarlak"> Su</button> 
+                <button type="button" class="yuvarlak"> Su</button> 
+              </div>
+            </div>
+            <div class="row" >
+              <div class="center" >
+                &nbsp; &nbsp;<button type="button" class="yuvarlak"> Ekmek</button> 
+                <button type="button" class="yuvarlak"> Poşet</button> 
+                <button type="button" class="yuvarlak"> Su</button> 
+                <button type="button" class="yuvarlak"> Su</button>
+              </div>
+            </div>
+              <div class="row form-group w-75" style="margin:auto; width: 70%; padding: 5px;">
+               <button type="button" class="btn btn-primary "> <i class="bi bi-chat-right-dots" style="font-size: 2rem;"></i> Etiket Tuşu Ayarla</button> 
+              </div>
+              <div class="row form-group w-50" style="margin:auto; width: 70%; padding: 5px;">
+                <button type="button" class="btn btn-primary "> <i class="bi bi-binoculars-fill" style="font-size: 2rem;"></i> Fiyat Gör</button> 
+               </div>
+               <div class="container text-center">
+                <button type="button" class="btn btn-primary "> <i class="bi bi-bookmark-check-fill" style="font-size: 2rem;"></i> Düzelt</button> 
+                &nbsp; <button type="button" class="btn btn-primary"> <i class="bi bi-bookmark-dash-fill" style="font-size: 2rem;"></i> Sil</button>
+                &nbsp; <button type="button" class="btn btn-primary"> <i class="bi bi-bootstrap-reboot" style="font-size: 2rem;"></i> İptal</button>
+              </div>
+            </br>
+              <textarea id="text" rows="6" cols="55" style="margin-top: -5px; margin-left: 1px; background-color:dodgerblue; resize: none; border: 2px solid blue;"> </textarea> 
+            </fieldset>
+          </div>
+
+          <div class="divim" float:right;>
+            <fieldset>
+              &nbsp; <legend>İşlemler:</legend>
+              <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            <a href="#" class="btn btn-squared-default btn-primary">
+                                <i class="bi bi-person-circle fa-3x"></i>
+                                <br />
+                                Müşteri   
+                            </a>
+                            &nbsp;
+                            <a href="#" class="btn btn-squared-default btn-primary">
+                              <i class="bi bi-briefcase-fill fa-3x"></i>
+                              <br />
+                             İşlemler
+                          </a>
+                          &nbsp;
+                          <a href="#" class="btn btn-squared-default btn-primary">
+                            <i class="bi bi-basket fa-3x"></i>
+                            <br />
+                            &nbsp;
+                        </a>
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-lg-12">
+                      <p>
+                          <a href="#" class="btn btn-squared-default btn-primary">
+                              <i class="bi bi-archive fa-3x"></i>
+                              <br />
+                             Çekmece
+                          </a>
+                          &nbsp;
+                          <a href="#" class="btn btn-squared-default btn-primary">
+                            <i class="bi bi-key-fill fa-3x"></i>
+                            <br />
+                           Kilitle
+                        </a>
+                        &nbsp;
+                        <a href="#" class="btn btn-squared-default btn-primary">
+                           <i class="bi bi-award fa-3x"></i> 
+                          <br />
+                         Yönetim
+                      </a>
+                      </p>
+                  </div>
+              </div>
+              </div>
+            </br>
+            <div class="container pb-calc-container">
+              <div class="row">
+                  <div class="container text-center">
+                      <div class="panel panel-info">
+                          <div class="panel-body pb-calc-panel-body">
+                              <hr class="pb-calc-hr">
+                              <div class="row" style="background: #66fcfcb6;">
+                                  <div class="col-md-12">
+                                      <div class="row" style="padding-bottom: 5px;">
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">1</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">2</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">3</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                            <button class="btn pb-calc-btn">Sil</button>
+                                        </div>
+                                      </div>
+                                      <div class="row" style="padding-bottom: 5px;">
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">4</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">5</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">6</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                            <button class="btn pb-calc-btn">Enter</button>
+                                        </div>
+                                      </div>
+                                      <div class="row" style="padding-bottom: 5px;">
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">7</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">8</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">9</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                            <button class="btn pb-calc-btn bi bi-calculator" ></button>
+                                        </div>
+                                      </div>
+                                      <div class="row" style="padding-bottom: 5px;">
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">0</button>
+                                          </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                            <button class="btn pb-calc-btn">00</button>
+                                        </div>
+                                          <div class="col-xs-3 col-sm-3 col-md-3">
+                                              <button class="btn pb-calc-btn">,</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <hr class="pb-calc-hr">
+              <img class="container text-center" src="./Untitled-2-1608560817.png" alt="ideal">
+            </div>
+            </fieldset>
+          </div>
+           </form>
+
+    </body>  
+</html>
+
+
